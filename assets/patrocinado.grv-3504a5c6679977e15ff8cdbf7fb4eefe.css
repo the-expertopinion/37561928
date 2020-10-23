@@ -1,0 +1,185 @@
+.fira_sans {
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif !important;
+}
+
+/* Hacks */
+
+.detail main .text p, .detail main .text h2 {
+    font-family:inherit;
+}
+
+#header_detail header .brand-logo a {
+    display: block;
+    height: 30px;
+    width: 200px;
+    background: url(logo_blanco.svg) center center no-repeat;
+    background-size: contain;
+}
+
+/* Patrocinado */
+
+.fondo_rojo {
+    background-color: #e42644;
+}
+
+.icono_blanco {
+    color: white;
+}
+
+.etiqueta_patrocinado {
+    position: relative;
+}
+
+.contenedor_menu {
+    position: relative; 
+    width: 50px; 
+    height: 100%; 
+    background-color: rgba(255,255,255,.3); 
+    margin-left: -15px;
+}
+
+.menu_patrocinado {
+    background-color: transparent;
+    display: block;
+    margin: auto;
+    margin-top: 50%;
+    transform: translate(-50%,-65%);
+    margin-left: 50%;
+}
+
+.menu_patrocinado .barra_menu {
+    background-color: white;
+}
+
+.contenedor_firma-branded, .contenedor_etiqueta_branded-movil {
+    display: flex;
+    justify-content: center;
+}
+
+.caja_etiqueta_branded-movil {
+    width: 100%; 
+    text-align: center; 
+ }
+
+.etiqueta_patrocinado-movil {
+    float: left; 
+    border-radius: 8px; 
+    border: 1px solid #e42644; 
+    color: #e42644; 
+    width: 200px; 
+    height: 26px; 
+    text-align: center; 
+    font-size: 12px; 
+    line-height: 27px;
+}
+
+.grupo_etiqueta_patrocinado-movil {
+    display: flex; 
+    justify-content: space-around;
+    padding: 15px 0 15px 0;
+}
+
+.linea_izq-patrocinado {
+    width: 100%; 
+    padding-right: 15px;
+}
+
+.linea_dch-patrocinado {
+    width: 100%; 
+    padding-left: 15px;
+}
+
+.linea_roja {
+    display: inline-block;
+    border-bottom: 1px solid #e42644; 
+    width: 100%;
+}
+
+.ancho_completo-branded {
+    width: 100%;
+}
+
+.cierre_branded {
+    font-size: 14px;
+    text-align: center;
+
+    color: #666666;
+    margin: 70px 0;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 15px 0 15px 0;
+    width: 300px;
+}
+
+.factoria_branded {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+@media (max-width: 768px) {
+    .contenedor_etiqueta-desktop {
+        display: none !important;
+    }
+    
+    .menu_patrocinado {
+        background-color: transparent;
+        display: block;
+        width: 40px;
+        margin-top: 50%;
+        transform: translate(-27%,-65%);
+        margin-left: 50%;
+    }
+
+    .pico_cabera-movil {
+        width: 100%;
+        height: 50px;
+        background: url('img/pico_cabecera-movil.png') no-repeat; 
+        background-position: center bottom;
+    }
+
+    .caja_firma-branded {
+        width: 100%; 
+     } 
+
+     .cierre_branded {
+        margin: 70px auto;
+     }
+
+     .special header {
+        border-bottom: none !important;
+    }
+  }
+
+@media (min-width: 1020px) {
+    .alineado_logo-branded {
+        float: right;
+    }
+
+    .etiqueta_patrocinado::before {
+        content: 'CONTENIDO PATROCINADO';
+        position: absolute;
+        right: 78%;
+        border-radius: 8px; 
+        border: none; 
+        color: #e42644; 
+        background-color: white;
+        width: 200px; 
+        height: 26px; 
+        text-align: center; 
+        font-size: 14px; 
+        line-height: 27px;
+    }
+
+    
+    .etiqueta_patrocinado-movil, .grupo_etiqueta_patrocinado-movil {
+        display: none;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1020px) {
+
+    .menu_patrocinado {
+        margin-top: 40%;
+    }
+
+}

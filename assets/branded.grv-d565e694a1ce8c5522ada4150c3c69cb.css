@@ -1,0 +1,261 @@
+.fira_sans {
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif !important;
+}
+
+.detail main .text p {
+    font-family:inherit;
+}
+
+
+.flex_columna {
+    flex-direction: column; 
+    align-items: center !important;
+}
+
+.caja_branded {
+    width: 100%; 
+    height: 100%; 
+    background: rgb(245,245,245); 
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(245,245,245,1) 100%); 
+    border-radius: 10px 10px 0 0; 
+    padding-top: 20px;
+}
+
+.contenedor_branded {
+    width: 40%;
+    max-width: 600px;
+    height:140px; 
+    margin:0 auto; 
+    text-align: center; 
+}
+
+.entradilla_branded {
+    font-size: 24px; 
+    padding: 0 120px 0 120px;
+}
+
+.separador_branded {
+    float:left; 
+    border-left: 1px solid rgba(255,255,255,.5); 
+    height: 30px; 
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+
+.etiqueta_branded {
+    position: relative;
+    top: 3px;
+    float: left;
+    border-radius: 8px; 
+    border: 1px solid white; 
+    color: white; 
+    width: 200px; 
+    height: 26px; 
+    text-align: center; 
+    font-size: 14px; 
+    line-height: 24px;
+}
+
+.etiqueta_branded-movil {
+    float: left; 
+    border-radius: 8px; 
+    border: 1px solid white; 
+    color: white; 
+    width: 200px; 
+    height: 26px; 
+    text-align: center; 
+    font-size: 12px; 
+    line-height: 24px;
+}
+
+.grupo_etiqueta_branded-movil {
+    display: flex; 
+    justify-content: space-around;
+}
+
+.linea_izq-branded {
+    border-bottom: 1px solid white; 
+    width: 80px; 
+    margin-top: 12px; 
+    margin-right: 15px; 
+    margin-left: 10px;
+}
+
+.linea_dch-branded {
+    border-bottom: 1px solid white; 
+    width: 80px; 
+    margin-top: 12px; 
+    margin-right: 10px; 
+    margin-left: 15px;
+}
+
+.texto_colaboracion {
+    color: #999999; 
+    font-size: 16px; 
+    padding-bottom: 10px;
+}
+
+.fondo_branded-desktop {
+    background: url('/assets/themes/lvdg2017/images/pico_cabecera.png') no-repeat !important; 
+    background-position: center top !important;
+}
+
+.contenedor_firma-branded, .contenedor_etiqueta_branded-movil {
+    display: flex;
+    justify-content: center;
+}
+
+.caja_etiqueta_branded-movil {
+    width: 100%; 
+    text-align: center; 
+ }
+
+
+.caja_firma-branded {
+    width: 70%; 
+    text-align: center; 
+ } 
+ 
+ .autor-branded {
+    color: #222222;
+    font-size: 20px;
+    font-weight: bold;
+ }
+
+.cargo-branded {
+    color: #222222;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.caja_firma-branded {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+   }
+  
+.caja_firma-branded:before, 
+.caja_firma-branded:after {
+    flex-grow: 1;
+    height: 1px;
+    content: '\a0';
+    background-color: #ddd;
+    position: relative;
+    top: 20px;
+  }
+  
+.caja_firma-branded:before {
+    margin-right:20px;
+}
+  
+.caja_firma-branded:after {
+    margin-left:20px;
+}
+
+.ancho_completo-branded {
+    width: 100%;
+}
+
+.cierre_branded {
+    font-size: 14px;
+    text-align: center;
+
+    color: #666666;
+    margin: 70px 0;
+    border-top: 1px solid #d8d8d8;
+    border-bottom: 1px solid #d8d8d8;
+    padding: 15px 0 15px 0;
+    width: 300px;
+}
+
+.factoria_branded {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.espacio_vertical-branded {
+    display: block;
+    height: 50px;
+}
+
+@media (max-width: 768px) {
+    
+
+    .etiqueta_branded, .separador_branded {
+      visibility: hidden;
+    }
+
+    .fondo_branded-desktop {
+        background-image: none !important;
+    }
+
+    .contenedor_branded {
+        width: 80%;
+    }
+
+    .entradilla_branded {
+        padding: 0 10px 0 10px;
+    }
+
+    .pico_cabera-movil {
+        width: 100%;
+        height: 50px;
+        background: url('/assets/themes/lvdg2017/images/pico_cabecera-movil.png') no-repeat; 
+        background-position: center bottom;
+    }
+
+    .caja_firma-branded {
+        width: 100%; 
+     } 
+
+     .cierre_branded {
+        margin: 70px auto;
+     }
+
+     .special header {
+        border-bottom: none !important;
+    }
+
+    .hero-module .video-container {
+        height: 100vh !important;
+    }
+  }
+
+@media (min-width: 768px) {
+
+    .hero-module .video-container {
+        height: 70vh !important;
+    }
+
+    .hero-module .no-logo {
+        height: 100vh !important;
+    }
+
+    .hero-module .no-logo .headline {
+        position: relative;
+        top: -50vh;
+        transform: translateY(50%) !important; 
+    }
+    
+    .alineado_logo-branded {
+        float: right;
+    }
+    
+    .etiqueta_branded-movil, .pico_cabera-movil, .grupo_etiqueta_branded-movil {
+        visibility: hidden;
+    }
+}
+
+
+/* Hacks */
+
+
+
+.special:not(.branded) .intro:after {
+    display: none !important;
+}
+
+#header.sites header {
+    height: 60px !important;
+}
